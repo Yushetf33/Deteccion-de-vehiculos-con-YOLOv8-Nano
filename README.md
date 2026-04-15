@@ -14,7 +14,7 @@ Este trabajo sirve como **Prueba de Concepto (PoC)** y base técnica para mi fut
 ## 📸 Resultados de Inferencia
 El modelo ha sido probado con imágenes de tráfico real, logrando identificar múltiples clases simultáneamente con una latencia mínima.
 
-![Detección en Autopista](autopista.jpeg)
+![Detección en Autopista](descarga.png)
 
 ---
 
@@ -25,7 +25,7 @@ A diferencia de otros proyectos, aquí se prioriza la interpretación técnica d
 * **Precisión (P):** 87.1%
 * **mAP50:** 0.523 (Tras 15 épocas de entrenamiento)
 
-![Gráfica de Métricas](descarga.png)
+![Gráfica de Métricas](metricas.png)
 
 ### 💡 Lecciones Aprendidas (Insight Técnico)
 El entrenamiento se realizó sobre un subset del dataset **COCO8**. El mAP obtenido del 52.3% indica un escenario de **overfitting controlado**. Esta observación es clave: demuestra que el modelo ha aprendido las características principales pero requiere de un dataset más extenso (como *Cityscapes*) para mejorar su capacidad de generalización, objetivo marcado para la siguiente fase del proyecto.
